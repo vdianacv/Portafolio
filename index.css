@@ -1,0 +1,114 @@
+body{
+    background-color: gainsboro;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 auto;
+}
+.header{
+    border: 2px solid violet;
+    background-color: violet;
+}
+
+.header__menu{
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+}
+.header__menu ul{
+    display: flex;
+}
+.header__menu li{
+    display: inherit;
+}
+.header__menu a{
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.header__menu a:hover{
+    background-color: blueviolet;
+    color: white;
+    border-radius: 10px;
+}
+
+.container{
+    width: 1000px;
+    margin: 0 auto;
+}
+.banner{
+    color: black;
+    background-color: rgb(255, 255, 255);
+}
+.banner .banner__hero{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.banner__text-hero{
+    padding: 80px 0 0 80px;
+    font-family: monospace;
+    font-size: 18px;
+}
+.portafolio{
+    display: flex;
+    margin: 100px;
+}
+.portafolio__box{
+    margin: 15px;
+    box-shadow: 0px 1px 8px 1px violet;
+    border-radius: 10px;
+    width: 33%;
+}
+.portafolio__box img{
+    border-radius: 10px;
+}
+.portafolio__card{
+    margin: 5px;
+    padding: 5px;
+}
+.portafolio__card button{
+    background-color: violet;
+    color: black;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 1px 4px 1px grey;
+}
+.title{
+    background-color: indigo;
+    border-left: 6px solid black;
+}
+
+.proyecto{
+    display: flex;
+    margin: 100px;
+}
+.proyecto__box{
+    margin: 15px;
+    box-shadow: 0px 1px 8px 2px violet;
+    border-radius: 10px;
+}
+.proyecto__box img{
+    border-radius: 10px;
+}
+
+.proyecto__body{
+    box-shadow: 0px -10px 10px 2px mediumvioletred;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.footer{
+    color: black;
+    background-color: blueviolet;
+}
+.footer__sections{
+    padding: 10px;
+}
+.copyright p{
+    background-color: burlywood;
+    color:rgb(0, 0, 0);
+    font-family: italic;
+    text-align: center;
+}
+
