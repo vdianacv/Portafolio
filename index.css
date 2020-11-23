@@ -5,8 +5,8 @@ body{
 }
 .header{
     border: 2px solid blue;
-  --background-color: linear-gradient(left, tomato, cyan, lightgreen);
-    background-color: #40A2CE;
+    background: -prefix-linear-gradient(left, blue, white);
+    --background-color: #40A2CE;
     opacity: 0.5;
 }
 
@@ -49,9 +49,9 @@ body{
     text-align: center;
 }
 .banner__text-hero{
-    padding: 80px 0 0 80px;
+    padding: 60px 0 0 60px;
     font-family: monospace;
-    font-size: 18px;
+    font-size: 16px;
 }
 .portafolio{
     display: flex;
@@ -64,7 +64,7 @@ body{
     width: 33%;
 }
 .portafolio__box img{
-    border-radius: 10px;
+    border-radius: 100px;
 }
 .portafolio__card{
     margin: 5px;
