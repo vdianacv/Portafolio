@@ -5,8 +5,7 @@ body{
 }
 .header{
     border: 2px solid blue;
-    background: -prefix-linear-gradient(left, blue, white);
-    --background-color: #40A2CE;
+    background-color: #40A2CE;
     opacity: 0.5;
 }
 
@@ -59,7 +58,7 @@ body{
 }
 .portafolio__box{
     margin: 15px;
-    box-shadow: 0px 1px 8px 1px violet;
+    box-shadow: 0px 1px 8px 1px blue;
     border-radius: 10px;
     width: 33%;
 }
@@ -78,7 +77,7 @@ body{
     box-shadow: 0px 1px 4px 1px grey;
 }
 .title{
-    background-color: indigo;
+    background-color: #40A2CE;
     border-left: 6px solid black;
 }
 
@@ -88,7 +87,7 @@ body{
 }
 .proyecto__box{
     margin: 15px;
-    box-shadow: 0px 1px 8px 2px violet;
+    box-shadow: 0px 1px 8px 2px #40A2CE;
     border-radius: 10px;
 }
 .proyecto__box img{
@@ -96,7 +95,7 @@ body{
 }
 
 .proyecto__body{
-    box-shadow: 0px -10px 10px 2px mediumvioletred;
+    box-shadow: 0px -10px 10px 2px #40A2CE;
     display: flex;
     justify-content: space-between;
     padding: 10px;
@@ -109,7 +108,7 @@ body{
     padding: 10px;
 }
 .copyright p{
-    background-color: burlywood;
+    background-color: #40A2CE;
     color:rgb(0, 0, 0);
     font-family: italic;
     text-align: center;
