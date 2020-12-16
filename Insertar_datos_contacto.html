@@ -1,2 +1,63 @@
-<!DOCTYPE html>
-<html lang="es">
+
+<html>
+<body>
+<?php
+$connect=mysqli_connect("sql312.byethost11.com","b11_15776995","69d9e5553a","b11_15776995_firstdatabase");
+if ($connect) {
+		echo "conexion exitosa. <br />";
+		$Nombre= $_POST ['fullname'];
+		$Email= $_POST ['email'];
+		$Phone= $_POST ['phone'];
+		$Affair= $_POST ['affair'];
+		$Message= $_POST ['message'];
+
+		$consulta="insert into Consultas_Clientes values ('$Nombre','$Email','$Phone','$Affair','$Message')";
+		
+		$resultado=mysqli_query($connect,$consulta);
+		
+		if ($resultado) {
+			echo "Consulta almacenada. <br />";
+		}
+		else {
+			echo "error al guardar la consulta. <br />";
+		}
+		
+		if (mysqli_close($connect)){ 
+			echo "desconexion realizada. <br />";
+		} 
+		else {
+			echo "error en la desconexión";
+		}
+}
+$servername = "sql312.byethost11.com";
+$username = "b11_15776995";
+$password = "69d9e5553a";
+$dbname = "b11_15776995_firstdatabase";
+function mostrarDatos ($resultados) {
+if ($resultados !=NULL) {
+echo "- nombre: ".$resultados['Nombre']."<br/> ";
+echo "- email: ".$resultados['Email']."<br/>";
+echo "- Phone: ".$resultados['phone']."<br/>";
+echo "- Affair: ".$resultados['affair']."<br/>";
+echo "- Message: ".$resultados['message']."<br/>";
+
+echo "**********************************<br/>";}
+else {echo "<br/>No hay más datos!!! <br/>";}
+}
+$link = mysqli_connect($servername,$username,$password);
+mysqli_select_db($link, $dbname);
+$tildes = $link->query("SET NAMES 'utf8'"); //Para que se muestren las tildes correctamente
+$result = mysqli_query($link, "SELECT * FROM Alumnos");
+while ($fila = mysqli_fetch_array($result)){
+mostrarDatos($fila);
+}
+mysqli_free_result($result);
+mysqli_close($link);
+
+
+
+
+?>
+<br><br>
+<body/>
+<html/>
